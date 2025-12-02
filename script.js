@@ -1,72 +1,72 @@
-var typed = new Typed('#text', {
-    strings: ['a Trainer.', 'a Researcher.', 'a Consultant.', 'an Academia.', 'a motivational speaker.'],
-    typeSpeed: 100,
-    backSpeed: 60,
-    loop: true,
-});
+    var typed = new Typed('#text', {
+        strings: ['a Trainer.', 'a Researcher.', 'a Consultant.', 'an Academia.', 'a motivational speaker.'],
+        typeSpeed: 100,
+        backSpeed: 60,
+        loop: true,
+    });
 
-// SHOW SKILLS
+    // SHOW SKILLS
 
-let skillBtn = document.querySelector('.skill_btn');
-let skillDet = document.querySelector('.about_bottom');
+    let skillBtn = document.querySelector('.skill_btn');
+    let skillDet = document.querySelector('.about_bottom');
 
-skillBtn.addEventListener('click', () => {
-    skillDet.classList.toggle('show_skills');
-});
+    skillBtn.addEventListener('click', () => {
+        skillDet.classList.toggle('show_skills');
+    });
 
-// STICKY NAVIGATION BAR
+    // STICKY NAVIGATION BAR
 
-let nav = document.querySelector('nav');
-window.addEventListener('scroll', () => {
-    if (window.scrollY > 100) {
-        nav.classList.add('sticky_nav');
-    } else {
-        nav.classList.remove('sticky_nav');
-    }
-});
+    let nav = document.querySelector('nav');
+    window.addEventListener('scroll', () => {
+        if (window.scrollY > 100) {
+            nav.classList.add('sticky_nav');
+        } else {
+            nav.classList.remove('sticky_nav');
+        }
+    });
 
-//TESTIMONIAL SWIPER SLIDER
+    //TESTIMONIAL SWIPER SLIDER
 
-var swiper = new Swiper('.testSwiper', {
-    slidesPerView: 1,
-    loop: true,
-    autoplay: true,
+    var swiper = new Swiper('.testSwiper', {
+        slidesPerView: 1,
+        loop: true,
+        autoplay: true,
 
 
-})
+    })
 
-//FILTERS
+    //FILTERS
 
-var mixer = mixitup('.portfolio_images');
+    var mixer = mixitup('.portfolio_images');
 
-// BLOGS SWIPER SLIDER
+    // BLOGS SWIPER SLIDER
 
-var swiper = new Swiper('.blogSwiper', {
-    slidesPerView: 3,
-    spaceBetween: 30,
-    loop: true,
-    autoplay: true,
-    breakpoints: {
-        1200: {
-            slidesPerView: 2,
-            spaceBetween: 10
-        },
-        900: {
-            slidesPerView: 1,
-            spaceBetween: 10
-        },
-        500: {
-            slidesPerView: 1,
-            spaceBetween: 10
-        },
-    }
-});
+    var swiper = new Swiper('.blogSwiper', {
+        slidesPerView: 3,
+        spaceBetween: 30,
+        loop: true,
+        autoplay: true,
+        breakpoints: {
+            1200: {
+                slidesPerView: 2,
+                spaceBetween: 10
+            },
+            900: {
+                slidesPerView: 1,
+                spaceBetween: 10
+            },
+            500: {
+                slidesPerView: 1,
+                spaceBetween: 10
+            },
+        }
+    });
 
-// SHOW NAV
+    // SHOW NAV
 
-let bar = document.querySelector('.bars');
-let menu = document.querySelector('.menu');
+    let bar = document.querySelector('.bars');
+    let menu = document.querySelector('.menu');
 
-bar.addEventListener('click', () => {
-    menu.classList.toggle('show_nav');
-});
+    bar.addEventListener('click', () => {
+        menu.classList.toggle('show_nav');
+    });
