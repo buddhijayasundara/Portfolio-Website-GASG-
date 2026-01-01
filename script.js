@@ -1,72 +1,111 @@
-    var typed = new Typed('#text', {
-        strings: ['a Trainer.', 'a Researcher.', 'a Consultant.', 'an Academia.', 'a motivational speaker.'],
-        typeSpeed: 100,
-        backSpeed: 60,
-        loop: true,
-    });
+// TYPED JS
+const typed = new Typed('#text', {
+    strings: ['a Trainer.', 'a Researcher.', 'a Consultant.', 'an Academic.', 'a motivational speaker.'],
+    typeSpeed: 100,
+    backSpeed: 60,
+    loop: true,
+});
 
-    // SHOW SKILLS
+// SHOW SKILLS
+const skillBtn = document.querySelector('.skill_btn');
+const skillDet = document.querySelector('.about_bottom');
 
-    let skillBtn = document.querySelector('.skill_btn');
-    let skillDet = document.querySelector('.about_bottom');
-
+if (skillBtn && skillDet) {
     skillBtn.addEventListener('click', () => {
         skillDet.classList.toggle('show_skills');
+        skillBtn.textContent = skillDet.classList.contains('show_skills') ? 'Hide my capabilities' : 'Show my capabilities';
     });
+}
 
-    // STICKY NAVIGATION BAR
+// STICKY NAVIGATION BAR
+const nav = document.querySelector('.navbar');
+const navbarCollapse = document.querySelector('#navbarNav');
+const navbarToggler = document.querySelector('.navbar-toggler');
 
-    let nav = document.querySelector('nav');
-    window.addEventListener('scroll', () => {
-        if (window.scrollY > 100) {
-            nav.classList.add('sticky_nav');
+window.addEventListener('scroll', () => {
+    if (window.scrollY > 100) {
+        nav.classList.add('sticky_nav');
+    } else {
+        nav.classList.remove('sticky_nav');
+    }
+
+    // Close navbar on scroll if it's expanded
+    if (navbarCollapse && navbarCollapse.classList.contains('show')) {
+        const bsCollapse = bootstrap.Collapse.getInstance(navbarCollapse);
+        if (bsCollapse) {
+            bsCollapse.hide();
         } else {
-            nav.classList.remove('sticky_nav');
+            // If no instance exists, create one and hide it
+            new bootstrap.Collapse(navbarCollapse, { toggle: false }).hide();
+        }
+    }
+});
+
+// Close navbar when clicking outside
+document.addEventListener('click', (event) => {
+    if (navbarCollapse && navbarCollapse.classList.contains('show')) {
+        // Check if click is outside navbar
+        const isClickInsideNavbar = nav.contains(event.target);
+
+        if (!isClickInsideNavbar) {
+            const bsCollapse = bootstrap.Collapse.getInstance(navbarCollapse);
+            if (bsCollapse) {
+                bsCollapse.hide();
+            } else {
+                new bootstrap.Collapse(navbarCollapse, { toggle: false }).hide();
+            }
+        }
+    }
+});
+
+// Close navbar when clicking on nav links (for smooth navigation)
+const navLinks = document.querySelectorAll('.nav-link');
+navLinks.forEach(link => {
+    link.addEventListener('click', () => {
+        if (navbarCollapse && navbarCollapse.classList.contains('show')) {
+            const bsCollapse = bootstrap.Collapse.getInstance(navbarCollapse);
+            if (bsCollapse) {
+                bsCollapse.hide();
+            } else {
+                new bootstrap.Collapse(navbarCollapse, { toggle: false }).hide();
+            }
         }
     });
+});
 
-    //TESTIMONIAL SWIPER SLIDER
+// TESTIMONIAL SWIPER SLIDER
+const testimonialSwiper = new Swiper('.testSwiper', {
+    slidesPerView: 1,
+    loop: true,
+    autoplay: {
+        delay: 3000,
+        disableOnInteraction: false,
+    },
+    pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+    },
+});
 
-    var swiper = new Swiper('.testSwiper', {
-        slidesPerView: 1,
-        loop: true,
-        autoplay: true,
+// Portfolio MixItUp and Swiper are now handled by portfolio-loader.js
 
-
-    })
-
-    //FILTERS
-
-    var mixer = mixitup('.portfolio_images');
-
-    // BLOGS SWIPER SLIDER
-
-    var swiper = new Swiper('.blogSwiper', {
-        slidesPerView: 3,
-        spaceBetween: 30,
-        loop: true,
-        autoplay: true,
-        breakpoints: {
-            1200: {
-                slidesPerView: 2,
-                spaceBetween: 10
-            },
-            900: {
-                slidesPerView: 1,
-                spaceBetween: 10
-            },
-            500: {
-                slidesPerView: 1,
-                spaceBetween: 10
-            },
+// BLOGS SWIPER SLIDER
+const blogSwiper = new Swiper('.blogSwiper', {
+    slidesPerView: 1,
+    spaceBetween: 20,
+    loop: true,
+    autoplay: {
+        delay: 4000,
+        disableOnInteraction: false,
+    },
+    breakpoints: {
+        768: {
+            slidesPerView: 2,
+            spaceBetween: 20
+        },
+        1024: {
+            slidesPerView: 3,
+            spaceBetween: 30
         }
-    });
-
-    // SHOW NAV
-
-    let bar = document.querySelector('.bars');
-    let menu = document.querySelector('.menu');
-
-    bar.addEventListener('click', () => {
-        menu.classList.toggle('show_nav');
-    });
+    }
+});

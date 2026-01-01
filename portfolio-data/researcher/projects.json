@@ -1,0 +1,29 @@
+[
+    {
+        "id": 1,
+        "category": "researcher",
+        "title": "Panel Member. ISSPM 2025 Conference",
+        "description": "Panel member at the International Conference on Sustainable Plantation Management.",
+        "link": "https://www.linkedin.com/posts/gasginigaddara_attended-as-a-panel-member-at-the-international-activity-7332024907163201536",
+        "timestamp": "2025-05-20T00:00:00",
+        "image": "Images/Projects/Researcher/Picture1.jpg"
+    },
+    {
+        "id": 2,
+        "category": "researcher",
+        "title": "Scientific Reviewer. Food Insecurity Study",
+        "description": "Scientific reviewer for a national study on household food insecurity in Sri Lanka.",
+        "link": "https://www.linkedin.com/posts/gasginigaddara_rusl-fian-srilanka-activity-7287694101129400320",
+        "timestamp": "2025-01-21T00:00:00",
+        "image": "Images/Projects/Researcher/Picture2.jpg"
+    },
+    {
+        "id": 3,
+        "category": "researcher",
+        "title": "Invited Speaker. Innovation for Resilient Agriculture Conference",
+        "description": "Invited speaker at the international conference on innovation for resilient agriculture in Thailand.",
+        "link": "https://web.facebook.com/photo/?fbid=10159963776911185",
+        "timestamp": "2022-10-19T00:00:00",
+        "image": "Images/Projects/Researcher/Picture3.jpg"
+    }
+]
