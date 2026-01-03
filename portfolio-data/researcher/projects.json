@@ -25,5 +25,59 @@
         "link": "https://web.facebook.com/photo/?fbid=10159963776911185",
         "timestamp": "2022-10-19T00:00:00",
         "image": "Images/Projects/Researcher/Picture3.jpg"
+    },
+    {
+        "id": 4,
+        "category": "researcher",
+        "title": "Wonders of Spices in Sri Lanka",
+        "description": "Book chapter on the wonders of spices in Sri Lanka.",
+        "link": "https://www.linkedin.com/posts/gasginigaddara_spices-srilanka-activity-7409822407441678336-VvCy?utm_source=share&utm_medium=member_desktop&rcm=ACoAAAkdnpIBAcHSIKTfWXrMj4TjflwbdL7YPfQ",
+        "timestamp": "2018-03-22T09:00:00",
+        "image": "Images/Projects/Researcher/Picture4.jpg"
+    },
+    {
+        "id": 5,
+        "category": "researcher",
+        "title": "Ecological Intensification in Asian Rice Production Systems",
+        "description": "Book chapter published on ecological intensification in Asian rice production systems.",
+        "link": "https://www.linkedin.com/posts/gasginigaddara_ecology-rice-agriculturalsystems-activity-7409503479905480705-KV1v?utm_source=share&utm_medium=member_desktop&rcm=ACoAAAkdnpIBAcHSIKTfWXrMj4TjflwbdL7YPfQ",
+        "timestamp": "2018-09-27T09:00:00",
+        "image": "Images/Projects/Researcher/Picture5.jpg"
+    },
+    {
+        "id": 6,
+        "category": "researcher",
+        "title": "Climate-Smart and Resilient Agricultural Practices in Sri Lanka",
+        "description": "Book chapter discussing climate-smart and resilient agricultural practices within the Eastern Dry Zone of Sri Lanka.",
+        "link": "https://www.linkedin.com/posts/gasginigaddara_climate-srilanka-agriculturalsystems-activity-7409496335785230337-BPh5?utm_source=share&utm_medium=member_desktop&rcm=ACoAAAkdnpIBAcHSIKTfWXrMj4TjflwbdL7YPfQ",
+        "timestamp": "2020-09-19T09:00:00",
+        "image": "Images/Projects/Researcher/Picture6.jpg"
+    },
+    {
+        "id": 7,
+        "category": "researcher",
+        "title": "Legumes for Energy Efficiency in Agricultural Systems",
+        "description": "Book chapter focusing on the role of legumes in improving energy efficiency in agricultural systems.",
+        "link": "https://www.linkedin.com/posts/gasginigaddara_legumes-energyefficiancy-intensification-activity-7409158782599163904-6nGS?utm_source=share&utm_medium=member_desktop&rcm=ACoAAAkdnpIBAcHSIKTfWXrMj4TjflwbdL7YPfQ",
+        "timestamp": "2022-01-01T09:00:00",
+        "image": "Images/Projects/Researcher/Picture7.jpg"
+    },
+    {
+        "id": 8,
+        "category": "researcher",
+        "title": "Nexus of Food Security and Tank Cascade Systems (TCSs) in Sri Lanka",
+        "description": "Book chapter examining the relationship between food security and tank cascade systems in Sri Lanka.",
+        "link": "https://www.linkedin.com/posts/gasginigaddara_tankcascadesystems-srilanka-tradeoffs-activity-7409061617369276416-kE5r?utm_source=share&utm_medium=member_desktop&rcm=ACoAAAkdnpIBAcHSIKTfWXrMj4TjflwbdL7YPfQ",
+        "timestamp": "2025-01-01T09:00:00",
+        "image": "Images/Projects/Researcher/Picture8.jpg"
+    },
+    {
+        "id": 9,
+        "category": "researcher",
+        "title": "Building Climate-Resilient Food Systems in Sri Lanka",
+        "description": "Journal article on building climate-resilient food systems in Sri Lanka through site-specific agricultural management.",
+        "link": "https://www.linkedin.com/posts/gasginigaddara_article-srilanka-agronomy-activity-7408886782358056960-Gx8x?utm_source=share&utm_medium=member_desktop&rcm=ACoAAAkdnpIBAcHSIKTfWXrMj4TjflwbdL7YPfQ",
+        "timestamp": "2024-01-01T09:00:00",
+        "image": "Images/Projects/Researcher/Picture9.jpg"
     }
 ]

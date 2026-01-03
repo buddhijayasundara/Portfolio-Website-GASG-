@@ -1,6 +1,6 @@
 // TYPED JS
 const typed = new Typed('#text', {
-    strings: ['a Trainer.', 'a Researcher.', 'a Consultant.', 'an Academic.', 'a motivational speaker.'],
+    strings: ['a Consultant.', 'an Academic.', 'a Trainer.', 'a Researcher.', 'a motivational speaker.'],
     typeSpeed: 100,
     backSpeed: 60,
     loop: true,
