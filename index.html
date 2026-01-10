@@ -48,10 +48,14 @@
 
                 <!-- Social Icons (right on both mobile and desktop) -->
                 <div class="social_icon d-flex ms-auto order-1 order-lg-2">
-                    <i class="fa-brands fa-facebook-f"></i>
-                    <i class="fa-brands fa-linkedin-in"></i>
-                    <i class="fa-brands fa-google-scholar"></i>
-                    <i class="fa-brands fa-researchgate"></i>
+                    <a href="https://www.facebook.com/sanjeewanie.ginigaddara" target="_blank"><i
+                            class="fa-brands fa-facebook-f"></i></a>
+                    <a href="https://lk.linkedin.com/in/gasginigaddara" target="_blank"><i
+                            class="fa-brands fa-linkedin-in"></i></a>
+                    <a href="https://scholar.google.com/citations?user=nOUsQPEAAAAJ" target="_blank"><i
+                            class="fa-brands fa-google-scholar"></i></a>
+                    <a href="https://www.researchgate.net/profile/Ga-Sanjeewanie-Ginigaddara" target="_blank"><i
+                            class="fa-brands fa-researchgate"></i></a>
                 </div>
             </div>
         </nav>
@@ -431,23 +435,25 @@
             </div>
             <div class="row justify-content-center">
                 <div class="col-lg-10">
-                    <form class="contact-form" action="https://formspree.io/f/xjggbrrg" method="POST">
+                    <form class="contact-form" id="contact-form" action="https://formspree.io/f/xjggbrrg" method="POST"
+                        novalidate>
                         <div class="row g-3 w-100">
                             <div class="col-md-6">
                                 <div class="d-flex flex-column gap-3">
-                                    <input type="text" placeholder="Your Name" required>
-                                    <input type="email" placeholder="Your Email" required>
-                                    <input type="text" placeholder="Your Phone">
+                                    <input type="text" name="name" placeholder="Your Name" required>
+                                    <input type="email" name="email" placeholder="Your Email" required>
+                                    <input type="text" name="phone" placeholder="Your Phone">
                                 </div>
                             </div>
                             <div class="col-md-6">
-                                <textarea placeholder="Type Your Message" required></textarea>
+                                <textarea name="message" placeholder="Type Your Message" required></textarea>
                             </div>
                         </div>
+                        <div id="contact-status" class="contact-status-message mt-3 text-center"></div>
+                        <div class="d-flex justify-content-center justify-content-md-end mt-4">
+                            <button type="submit" class="contact-submit">Submit Form</button>
+                        </div>
                     </form>
-                    <div class="d-flex justify-content-center justify-content-md-end mt-4">
-                        <button class="contact-submit">Submit Form</button>
-                    </div>
                 </div>
             </div>
             <div class="contact-cards row mt-5 justify-content-center g-4">
